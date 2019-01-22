@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>calci</title>
-	<link rel="stylesheet" href="style.css">
+  <title>calci</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <main class="calculator">
+
+    <div class="top">
+
+      <span class="unit">deg</span>
+   	  <section class="screen">
+   	    <div class="input"></div>
+       	<div class="result"></div>
+   	  </section>
+
+    </div>
+
 	<div class="column">
 
-        <span class="keys">
+   	  <section class="keys">
 
-	  	<div>
-	      <span>7</span>
-	      <span>8</span>
-	      <span>9</span>
-	      <span>/</span>
+	  	<div class="bottom">
+	      <span data-key="7">7</span>
+	      <span data-key="4">4</span>
+	      <span data-key="1">1</span>
+	      <span data-key="0">0</span>
 	  	</div>
 
-	  	<div>
-	      <span>4</span>
-	      <span>5</span>
-	      <span>6</span>
-	      <span>*</span>
+	  	<div class="bottom">
+	      <span data-key="8">8</span>
+	      <span data-key="5">5</span>
+	      <span data-key="2">2</span>
+	      <span data-key=".">.</span>
+	  	</div>
+ 
+	    <div class="bottom">
+	      <span data-key="9">9</span>
+	      <span data-key="6">6</span>
+	      <span data-key="3">3</span>
+	      <span data-key="=">=</span>
 	  	</div>
 
-	  	<div>
-	      <span>1</span>
-	      <span>2</span>
-	      <span>3</span>
-	      <span>-</span>
-	  	</div>
+	  </section>
 
-	  	<div>
-	      <span>0</span>
-	      <span>.</span>
-	      <span>=</span>
-	      <span>+</span>
-	  	</div>
+	  <section class="operators">
+	  	  <span class="delete">del</span>
+	  	  <span data-key="÷">÷</span>
+	      <span data-key="x">x</span>
+	      <span data-key="-">-</span>
+	      <span data-key="+">+</span>
+      </section>
 
-		</span>
 	</div>
+
+  </main>
+ <span class="credit">View on <a href="">Github</a></span>	
+ <script src="calculator.js"></script>
 </body>
 </html>
